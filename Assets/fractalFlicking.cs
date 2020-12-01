@@ -6,7 +6,8 @@ using UnityEngine;
 public class fractalFlicking : MonoBehaviour
 {
     public double[] y;
-    int counter = 0, max_counter = 1000;
+    public int T=20;
+    int counter = 0, max_counter ;
 
     private float nextActionTime = 0.0f;
     public float period = 0.05f;
@@ -17,6 +18,7 @@ public class fractalFlicking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        max_counter = (int) (T / period);
         Weistrasse ws = new Weistrasse();
         y = ws.CreateSignal(max_counter, 0.05);
     }

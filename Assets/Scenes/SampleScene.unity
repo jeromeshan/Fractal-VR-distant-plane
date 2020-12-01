@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: []
+  T: 60
   period: 0.05
   planeMat: {fileID: 2100000, guid: bd75c1c250a5f634b9f3a769f2cf44c3, type: 2}
 --- !u!64 &766233534
